@@ -42,7 +42,8 @@
 <!--            -->
 <template name="_loginButtonsLoggedOutDropdown">
 	<li id="login-dropdown-list" class="dropdown">
-		<a class="dropdown-toggle"  data-toggle="dropdown">{{i18n 'loginButtonsLoggedOutDropdown.signIn'}}{{#unless forbidClientAccountCreation}} / {{i18n 'loginButtonsLoggedOutDropdown.up'}}{{/unless}} <b class="caret"></b></a>
+		<a class="dropdown-toggle"  data-toggle="dropdown">
+			{{i18n 'loginButtonsLoggedOutDropdown.signIn'}}{{#unless forbidClientAccountCreation}} / {{i18n 'loginButtonsLoggedOutDropdown.up'}}{{/unless}} <b class="caret"></b></a>
 		<div class="dropdown-menu">
 			{{> _loginButtonsLoggedOutAllServices}}
 		</div>
@@ -83,7 +84,7 @@
 		{{/each}}
 		<button class="btn btn-primary col-xs-12 col-sm-12" id="login-buttons-password" type="button">
 			{{#if inSignupFlow}}
-				{{i18n 'loginButtonsLoggedOutPasswordService.create'}}
+
 			{{else}}
 				{{i18n 'loginButtonsLoggedOutPasswordService.signIn'}}
 			{{/if}}
@@ -94,7 +95,7 @@
 				<a id="forgot-password-link" class="pull-left" >{{i18n 'loginButtonsLoggedOutPasswordService.forgot'}}</a>
 			{{/if}}
 			{{#if showCreateAccountLink}}
-				<a id="signup-link" class="pull-right" >{{i18n 'loginButtonsLoggedOutPasswordService.createAcc'}}</a>
+				
 			{{/if}}
 			</div>
 		{{/if}}
