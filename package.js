@@ -1,7 +1,7 @@
 Package.describe({
 	name: 'mfq:accounts-ui-bootstrap-3',
 	summary: 'Bootstrap-styled accounts-ui with multi-language support.',
-	version: '1.2.20',
+	version: '1.2.21',
 	git: "https://github.com/MFQ/meteor-accounts-ui-bootstrap-3"
 })
 
